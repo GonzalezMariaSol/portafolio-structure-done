@@ -1,0 +1,167 @@
+body{
+    background-color: rgb(255, 0, 0);
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+/*TOP SEARCH BAR*/
+header{
+    display: flex;
+    background-color:white;
+    height: 85px; 
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 3px 10px rgb(168, 168, 168);
+    z-index: 1;
+    top:0;
+}
+nav{
+    display: flex;
+    margin-left: 675px;
+    gap: 30px;
+    align-items: center;
+    height: 65px;
+}
+a{
+    text-decoration: none;
+}
+.browser, #browserViolet{
+    font-size: 16px;
+    border-radius: 0.7em;
+    height: 30px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;    
+/**************************************************************************************************
+    text-align: center;          why this one doesn't work
+**************************************************************************************************/
+}
+.browser:hover{
+    border-style: solid;
+    border-width: 0.01em;
+    border-color: #3c1270;
+    box-shadow: 0px 0px 15px 1px #c99dffee;
+}
+#browserViolet{
+    background-color: #8d43e8;
+    color: white;
+    border-radius: 30px;
+}
+#browserViolet:hover{
+    background-color:#a053ff;;
+    border-style: none;
+}
+
+/*INTRODUCTION*/
+#container-presentation{
+    background-color: rgb(199, 199, 199);
+    padding-top: 1px;
+    height:650px;
+}
+.presentation{
+    background-color:  rgb(199, 199, 199);
+    width: 600px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 320px;    
+}
+.text-presentation, h1, .button-presentation{
+    margin-top:-70px;
+    display: flex;
+    padding-top: 4px;
+    width: 900px;
+    height: 90px;
+    align-items: center;
+} 
+img{
+    background-color: rgb(199, 199, 199)/*GRIS*/;
+    margin-left: 750px;
+    margin-top: -320px;
+    font-size: 30px;
+    width: 500px;
+    height: 400px;
+}
+.button-presentation{
+    background-color:rgb(161, 94, 224);
+    width: 9em;
+    border-radius: 30px;
+    height: 40px;
+    padding-left: 4px;
+    margin-left: 3px;
+    margin-top: 38px;
+    color: white;
+}
+
+/*knowdlege section -middle-*/
+#knowledge{
+    background-color: white;
+    padding:100px;
+    height: 90em;
+    text-align: center;         /*why text align it does work in this situation?*/
+}
+.knowledge-cards{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 800px;
+    margin-left: 125px;
+    padding-top: 50px;
+}
+#knowledge-text{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin-left: 150px;
+    margin-top: -1em;
+}
+.knowledge-cards, .linea1 .linea2{
+    font-size: 20px;
+}
+.knowledge-first-line{
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.knowledge-line-one{
+    background-color:lightgray;
+    width: 242px;
+    height: 242px;
+    border-radius: 5%;
+}
+.second-knowledge-line{
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.knowledge-line-two{
+    background-color: lightgray;
+    width: 242px;
+    height: 242px;
+    border-radius: 5%;
+}
+/*QUOTE SECCTION*/
+.phrase{
+    background-color: rgb(96, 232, 116);
+    margin-top: 100px;
+    width:1263px;
+    margin-left: -100px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+blockquote{
+    background-color: rgb(161, 94, 224);
+    width: 1200px;
+    color: black;
+}
