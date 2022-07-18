@@ -23,9 +23,11 @@ nav{
     gap: 30px;
     align-items: center;
     height: 65px;
+    
 }
 a{
     text-decoration: none;
+    color: black;
 }
 .browser, #browserViolet{
     font-size: 16px;
@@ -156,6 +158,9 @@ img{
     color: black;
 }
 /*QUOTE SECCTION*/
+.fa-quote-right{
+    font-size: 90px;
+}
 .phrase{
     background-color:rgb(241, 241, 241);
     margin-top: 100px;
