@@ -5,6 +5,7 @@ body{
     width: 100%;
     height: 100%;
 }
+
 /*TOP SEARCH BAR*/
 header{
     display: flex;
@@ -23,11 +24,14 @@ nav{
     gap: 30px;
     align-items: center;
     height: 65px;
-    
 }
 a{
     text-decoration: none;
     color: black;
+}
+nav a{
+    display: flex;
+    align-items: center;
 }
 .browser, #browserViolet{
     font-size: 16px;
@@ -43,18 +47,43 @@ a{
 .browser:hover{
     border-style: solid;
     border-width: 0.01em;
-    border-color: #3c1270;
-    box-shadow: 0px 0px 15px 1px #c99dffee;
+    border-color:#6246ea;
+    box-shadow: 0px 0px 15px 1px #4f36ca;
 }
 #browserViolet{
-    background-color: #8d43e8;
+    background-color:#6246ea;
     color: white;
     border-radius: 60px;
 }
 #browserViolet:hover{
-    background-color:#a053ff;;
+    background-color:#7157f3;
     border-style: none;
 }
+
+
+
+
+@media(max-width:800px){
+    body{
+        width: 100%;
+    }
+    header{
+        height:200px;
+        width: 100%;
+    }
+    header nav{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        position: absolute;
+        margin-top: -100px;
+    }
+}
+
+
+
+
 
 /*INTRODUCTION*/
 #container-presentation{
@@ -73,7 +102,7 @@ a{
     display: flex;
     padding-top: 4px;
     width: 900px;
-    height: 90px;
+    height: 80px;
     align-items: center;
 } 
 img{
@@ -84,23 +113,23 @@ img{
     height: 400px;
 }
 .button-presentation{
-    background-color: #8d43e8;
+    background-color: #6246ea;
     width: 250px;
     height: 50px;
     margin-top: -40px;
     padding-left: 20px;
-    color: white;
+    color: black;
     border-radius: 60px;
 }
 .button-presentation:hover{
-    background-color:#a053ff;;
+    background-color:#b172ff;
     border-style: none;
 }
 
 
 /*knowdlege section -middle-*/
 #knowledge{
-    background-color: #d8ffff;
+    background-color: rgb(245, 245, 245);
     padding:100px;
     height: 900px;
     text-align: center;         /*why text align it does work in this situation?*/
@@ -128,7 +157,7 @@ img{
     margin-left: 150px;
     margin-top: -1em;
 }
-.knowledge-cards, .linea1 .linea2{
+.knowledge-cards, .knowledge-line-one .knowledge-line-two{
     font-size: 20px;
 }
 .knowledge-first-line{
@@ -157,12 +186,25 @@ img{
     border-radius: 5%;
     color: black;
 }
+.knowledge-line-one:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b172ff;
+}
+.knowledge-line-two:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b172ff;
+}
+
+
+
 /*QUOTE SECCTION*/
 .fa-quote-right{
     font-size: 90px;
 }
 .phrase{
-    background-color:rgb(241, 241, 241);
+    background-color:#b172ff;
     margin-top: 100px;
     width:1263px;
     margin-left: -100px;
@@ -178,7 +220,6 @@ blockquote{
 }
 
 /*PROYECTS SECCTION*/
-
 #proyect{
     background-color:white;
     width: 1150px;
@@ -206,7 +247,12 @@ blockquote{
     border-radius: 5%;
     border-style: solid;
     border-width: 1px;
-    border-color:  #66ecec;
+    border-color:#d1d1e9;
+}
+.proyect-line-one:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b172ff;
 }
 .proyect-line-one .portfolio-pic{
     margin-left: -4px;
@@ -238,7 +284,12 @@ blockquote{
     border-radius: 5%;
     border-width: 1px;
     border-style: solid;
-    border-color:  #66ecec;
+    border-color:#d1d1e9;
+}
+.proyect-line-two:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b172ff;
 }
 .proyect-line-two .expenses-pic{
     margin-left: -4px;
@@ -273,7 +324,12 @@ blockquote{
     margin-left: -770px;
     border-width: 1px;
     border-style: solid;
-    border-color:  #66ecec;
+    border-color:  #d1d1e9;
+}
+.proyect-line-three:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b172ff;
 }
 .proyect-line-three .movie-pic{
     margin-left: -4px;
@@ -284,7 +340,7 @@ blockquote{
 
 /*CONTACT -INFO PART*/
 #contact-father{
-    background-image: linear-gradient(to right top, #c1a1f8, #cbb4fd, #e0d6ff,  #dbffff, #eafdfd);
+    background-image: linear-gradient(to right top, #d1d1e9, #b5b2ed, #9a93ef, #8173ef, #6a50eb);
     width:1263px;
     margin-top: 500px;
     margin-left: -100px;
@@ -332,7 +388,7 @@ li{
     color: black;
 }
 .fa-instagram{
-    color: #66ecec;
+    color: #6246ea;
     margin-right: 20px;
     margin-left: -50px;
     font-size: 30px;
@@ -342,11 +398,11 @@ li{
 .fa-instagram:hover{
     border-style: solid;
     border-radius: 50%;
-    color: white;
-    background-color:#8d43e8;
+    color:white;
+    background-image: linear-gradient(to right bottom, #265bff, #6559ff, #8a55fe, #a951fc, #c44df9, #e03ce0, #f32dc6, #ff26ad, #ff457c, #ff8547, #ffc500, #ffff01);
 }
 .fa-linkedin{
-    color: #66ecec;
+    color: #6246ea;
     margin-right: 20px;
     margin-left: -50px;
     font-size: 30px;
@@ -357,10 +413,10 @@ li{
     border-style: solid;
     border-radius: 50%;
     color: white;
-    background-color:#8d43e8;
+    background-color:#216BFF;
 }
 .fa-github{
-    color: #66ecec;
+    color: #6246ea;
     margin-right: 20px;
     margin-left: -50px;
     font-size: 30px;
@@ -371,10 +427,10 @@ li{
     border-style: solid;
     border-radius: 50%;
     color: white;
-    background-color:#8d43e8;
+    background-color:black;
 }
 .fa-envelope{
-    color: #66ecec;
+    color: #6246ea;
     margin-right: 20px;
     margin-left: -50px;
     font-size: 30px;
@@ -385,7 +441,7 @@ li{
     border-style: solid;
     border-radius: 50%;
     color: white;
-    background-color:#8d43e8;
+    background-image: linear-gradient(to right top, #0004fd, #0039ff, #0053ff, #0068ff, #007bff, #007bff, #007bff, #007bff, #0069ff, #0054ff, #0039ff, #2100ff);
 }
 
 /*CONTACT - FORM PART*/
@@ -413,7 +469,7 @@ form, .continent{
     margin-top: -93px;
 }
 #send{
-    background-color: #8d43e8;   
+    background-color: #6246ea;   
     margin-top: 30px;
     width: 100px;
     height: 40px;
@@ -462,7 +518,7 @@ textarea{
 
 /*nav bar below*/
 footer{
-    background-color: #8827ff;
+    background-color: #b172ff;
     width: 1263px;
     height: 300px;
     margin-left: -100px;
@@ -490,8 +546,6 @@ footer{
     margin-left: 490px;
     gap: 100px;
 }
-
-
 footer .foooter-text{
     position:absolute;
     margin-top: 250px;
