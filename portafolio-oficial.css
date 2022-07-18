@@ -1,5 +1,4 @@
 body{
-    background-color: rgb(255, 0, 0);
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -57,12 +56,11 @@ a{
 
 /*INTRODUCTION*/
 #container-presentation{
-    background-color: rgb(199, 199, 199);
+    background-color: white;
     padding-top: 1px;
     height:650px;
 }
 .presentation{
-    background-color:  rgb(199, 199, 199);
     width: 600px;
     height: 250px;
     margin-left: 50px;
@@ -77,33 +75,35 @@ a{
     align-items: center;
 } 
 img{
-    background-color: rgb(199, 199, 199)/*GRIS*/;
-    margin-left: 750px;
+    margin-left: 710px;
     margin-top: -320px;
     font-size: 30px;
     width: 500px;
     height: 400px;
 }
 .button-presentation{
-    background-color:rgb(161, 94, 224);
-    width: 9em;
-    border-radius: 60px;
-    height: 40px;
-    padding-left: 4px;
-    margin-left: 3px;
-    margin-top: 38px;
+    background-color: #8d43e8;
+    width: 250px;
+    height: 50px;
+    margin-top: -40px;
+    padding-left: 20px;
     color: white;
+    border-radius: 60px;
 }
+.button-presentation:hover{
+    background-color:#a053ff;;
+    border-style: none;
+}
+
 
 /*knowdlege section -middle-*/
 #knowledge{
-    background-color: white;
+    background-color: #d8ffff;
     padding:100px;
     height: 900px;
     text-align: center;         /*why text align it does work in this situation?*/
 }
 .knowledge-cards{
-    background-color: white;
     display: flex;
     flex-direction: column;
     height: 800px;
@@ -111,8 +111,15 @@ img{
     margin-left: 125px;
     padding-top: 50px;
 }
+.knowledge-cards i{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    line-height: 120px;
+    color: black;
+}
 #knowledge-text{
-    background-color:white;
     display: flex;
     justify-content: center;
     width: 500px;
@@ -123,34 +130,34 @@ img{
     font-size: 20px;
 }
 .knowledge-first-line{
-    background-color:white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
 }
 .knowledge-line-one{
-    background-color:lightgray;
+    background-color:white;
     width: 242px;
     height: 242px;
     border-radius: 5%;
+    color:black;
 }
 .second-knowledge-line{
-    background-color:white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 25px;
 }
 .knowledge-line-two{
-    background-color: lightgray;
+    background-color: white;
     width: 242px;
     height: 242px;
     border-radius: 5%;
+    color: black;
 }
 /*QUOTE SECCTION*/
 .phrase{
-    background-color:rgb(199, 199, 199);
+    background-color:rgb(241, 241, 241);
     margin-top: 100px;
     width:1263px;
     margin-left: -100px;
@@ -161,7 +168,6 @@ img{
     
 }
 blockquote{
-    background-color: rgb(199, 199, 199);
     width: 1200px;
     color: black;
 }
@@ -176,7 +182,6 @@ blockquote{
     height: 45em;
 }
 #proyect-text{
-    background-color: rgb(232, 101, 255);
     width: 500px;
     margin-left: 310px;
     margin-top:-20px;
@@ -185,49 +190,96 @@ blockquote{
     font-size: 20px;
 }
 .proyect-first-line{
-    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
 }
 .proyect-line-one{
-    background-color: rgba(193, 151, 225, 0.785);
     width: 350px;
     height: 350px;
     border-radius: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #66ecec;
+}
+.proyect-line-one .portfolio-pic{
+    margin-left: -4px;
+    max-width: 330px;
+    max-height: 300px;
+    margin-top: 3px;
+}
+.proyect-line-one .generator-pic{
+    margin-left: -4px;
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 3px;
+}
+.proyect-line-one .match-pic{
+    margin-left: -4px;
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 3px;
 }
 .proyect-second-line{
-    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
 }
 .proyect-line-two{
-    background-color: rgba(193, 151, 225, 0.785);
     width: 350px;
     height: 350px;
     border-radius: 5%;
+    border-width: 1px;
+    border-style: solid;
+    border-color:  #66ecec;
+}
+.proyect-line-two .expenses-pic{
+    margin-left: -4px;
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 3px;
+}
+.proyect-line-two .admin-pic{
+    margin-left: -4px;
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 3px;
+}
+.proyect-line-two .app{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    max-width: 290px;
+    max-height: 290px;
+    margin-top: 3px;
 }
 .proyect-third-line{
-    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
 }
 .proyect-line-three{
-    background-color: rgba(193, 151, 225, 0.785);
     width: 350px;
     height: 350px;
     border-radius: 5%;
     margin-left: -770px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:  #66ecec;
+}
+.proyect-line-three .movie-pic{
+    margin-left: -4px;
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 3px;
 }
 
 /*CONTACT -INFO PART*/
 #contact-father{
-    background-image: linear-gradient(to right top, #c1a1f8, #cbb4fd, #e0d6ff, #e0d6ff, #eafdfd);
+    background-image: linear-gradient(to right top, #c1a1f8, #cbb4fd, #e0d6ff,  #dbffff, #eafdfd);
     width:1263px;
     margin-top: 500px;
     margin-left: -100px;
@@ -235,7 +287,7 @@ blockquote{
     position: relative
 }
 .contact{
-    background-color: rgb(151, 69, 69);
+    background-color: white;
     width:1100px;
     height: 720px;
     margin-left: 85px;
@@ -243,11 +295,10 @@ blockquote{
     position: absolute;
     border-radius: 3%;
     border-style: solid;
-    border-width: 0.5px;
-    border-color: rgb(222, 222, 222);
+    border-width:1px;
+    border-color:rgb(216, 213, 213);
 }
 .info{
-    background-color: aqua;
     width: 50%;
     height: 600px;
     border-radius: 3%;
@@ -255,7 +306,6 @@ blockquote{
     text-align: left;
 }
 #contact-text{
-    background-color: white;
     width: 400px;
     text-align: left;
     margin-top: -15px;
@@ -268,18 +318,73 @@ ul{
 }
 li{
     font-size: 20px;
+    line-height: 10px;
 }
 .link{
-    background-color: white;
     display: flex;
     align-items: flex-start;
     width: 5em;
     color: black;
 }
+.fa-instagram{
+    color: #66ecec;
+    margin-right: 20px;
+    margin-left: -50px;
+    font-size: 30px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.fa-instagram:hover{
+    border-style: solid;
+    border-radius: 50%;
+    color: white;
+    background-color:#8d43e8;
+}
+.fa-linkedin{
+    color: #66ecec;
+    margin-right: 20px;
+    margin-left: -50px;
+    font-size: 30px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.fa-linkedin:hover{
+    border-style: solid;
+    border-radius: 50%;
+    color: white;
+    background-color:#8d43e8;
+}
+.fa-github{
+    color: #66ecec;
+    margin-right: 20px;
+    margin-left: -50px;
+    font-size: 30px;
+    padding: 5px;
+    margin-top: 5px; 
+}
+.fa-github:hover{
+    border-style: solid;
+    border-radius: 50%;
+    color: white;
+    background-color:#8d43e8;
+}
+.fa-envelope{
+    color: #66ecec;
+    margin-right: 20px;
+    margin-left: -50px;
+    font-size: 30px;
+    padding: 5px;
+    margin-top: 5px; 
+}
+.fa-envelope:hover{
+    border-style: solid;
+    border-radius: 50%;
+    color: white;
+    background-color:#8d43e8;
+}
 
 /*CONTACT - FORM PART*/
 .formulary{
-    background-color:pink;
     width: 50%;
     margin-top:-640px;
     margin-left: 530px;
@@ -303,7 +408,7 @@ form, .continent{
     margin-top: -93px;
 }
 #send{
-    background-color: rebeccapurple;
+    background-color: #8d43e8;   
     margin-top: 30px;
     width: 100px;
     height: 40px;
@@ -315,24 +420,28 @@ form, .continent{
     height: 30px;
     width: 200px;
     border-radius: 60px;
-    outline: none;
 }
 input{
     height: 30px;
     width: 200px;
     border-radius: 60px;
-    border-width: 0;
+    border-width: 1px;
+    border-style: solid;
+
 }
 input:focus{
     border-style: solid;
     border-color: #3c1270;
     box-shadow: 0px 0px 15px 1px #c99dffee;
     outline:none;
+
 }
 #continent-opptions:focus{
     border-style: solid;
     border-color: #3c1270;
     box-shadow: 0px 0px 15px 1px #c99dffee;
+    outline:none;
+
 }
 textarea:focus{
     border-style: solid;
@@ -341,8 +450,9 @@ textarea:focus{
     outline:none;
 }
 textarea{
-    border-width: 0px;
+    border-width: 1px;
     border-radius: 5px;
+    border-style: solid;
 }
 
 /*nav bar below*/
@@ -364,6 +474,19 @@ footer{
     font-size: 15px;
     text-transform: uppercase;
 }
+.ending a{
+    color: white;
+}
+.social-media{
+    position: absolute;
+    margin-top: 130px;
+    width: 300px;
+    height: 50px;
+    margin-left: 490px;
+    gap: 100px;
+}
+
+
 footer .foooter-text{
     position:absolute;
     margin-top: 250px;
