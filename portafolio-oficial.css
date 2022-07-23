@@ -5,7 +5,9 @@ body{
     width: 100%;
     height: 100%;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /*TOP SEARCH BAR*/
 header{
     display: flex;
@@ -25,7 +27,6 @@ nav{
     align-items: center;
     height: 65px;
 }
-
 a{
     text-decoration: none;
     color: black;
@@ -106,42 +107,6 @@ img{
     border-style: none;
 }
 
-
-@media(max-width: 400px){
-    #container-presentation{
-        width:100%;
-        flex-direction: column;
-    }
-    .presentation{
-        width: 60%;
-        height: 50%;
-        margin-top: 25%;
-        align-items: center;
-        text-align: center;
-        margin-left: 13%;
-    }
-    .text-presentation{
-        width: 100%;
-        height: 50%;
-        justify-content: center;
-    }
-    h1{
-        width: 142.5%;
-        margin-left:-22%;
-        padding-top: 10%;
-        padding-bottom: 10%;
-        align-items: center;
-        align-content: center;
-        
-    }
-    .button-presentation{
-        margin-left:-10%;
-    }
-    aside{
-        display: none;
-    }
-}
-
 /*KNOWLEDGE SECTION*/
 #knowledge{
     background-color: rgb(245, 245, 245);
@@ -150,12 +115,13 @@ img{
     text-align: center;         /*why text align it does work in this situation?*/
 }
 .knowledge-cards{
-    display: flex;
-    flex-direction: column;
     height: 800px;
     width: 800px;
     margin-left: 125px;
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .knowledge-cards i{
     font-size: 80px;
@@ -250,9 +216,9 @@ img{
 }
 .phrase{
     background-color:#b172ff;
-    margin-top: 100px;
-    width:1263px;
-    margin-left: -100px;
+    width: 100%;
+    /* width:1263px; */
+    text-align: center;
     height: 480px;
     display: flex;
     flex-direction: column;
@@ -262,46 +228,30 @@ blockquote{
     width: 1200px;
     color: black;
 }
-@media (max-width:400px){
-    .phrase{
-        background-color: #0069ff;
-        flex-direction: column;
-        width: 100%;
-        height: fit-content;
-        text-align: center;
-        justify-content: center;
-    }
-    blockquote{
-        flex-direction: column;
-        background-color: red;
-        width: 70%;
-        margin-left: 13%;
-    }
 
-}
 /*PROYECTS SECCTION*/
 #proyect{
     background-color:white;
-    width: 1150px;
-    margin-left: -45px;
+    width: 100%;
     padding-top: 75px;
     height: 45em;
+    text-align: center;
 }
 #proyect-text{
     width: 500px;
-    margin-left: 310px;
-    margin-top:-20px;
+    margin-left: 380px;
+    margin-top:-20px; 
 }
 #proyect, .proyect-line-one .proyect-line-two .proyect-line-three{
     font-size: 20px;
 }
-.proyect-first-line{
+.proyect-first-row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
 }
-.proyect-line-one{
+.proyect123{
     width: 350px;
     height: 350px;
     border-radius: 5%;
@@ -309,36 +259,24 @@ blockquote{
     border-width: 1px;
     border-color:#d1d1e9;
 }
-.proyect-line-one:hover{
+.proyect123:hover{
     border-style: solid;
     border-width: 1px;
     border-color: #b172ff;
 }
-.proyect-line-one .portfolio-pic{
+.proyect123 .portfolio-pic, .generator-pic, .match-pic{
     margin-left: -4px;
     max-width: 330px;
     max-height: 300px;
     margin-top: 3px;
 }
-.proyect-line-one .generator-pic{
-    margin-left: -4px;
-    max-width: 300px;
-    max-height: 300px;
-    margin-top: 3px;
-}
-.proyect-line-one .match-pic{
-    margin-left: -4px;
-    max-width: 300px;
-    max-height: 300px;
-    margin-top: 3px;
-}
-.proyect-second-line{
+.proyect-second-row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
 }
-.proyect-line-two{
+.proyect456{
     width: 350px;
     height: 350px;
     border-radius: 5%;
@@ -346,24 +284,18 @@ blockquote{
     border-style: solid;
     border-color:#d1d1e9;
 }
-.proyect-line-two:hover{
+.proyect456:hover{
     border-style: solid;
     border-width: 1px;
     border-color: #b172ff;
 }
-.proyect-line-two .expenses-pic{
+.proyect456 .expenses-pic, .admin-pic{
     margin-left: -4px;
     max-width: 300px;
     max-height: 300px;
     margin-top: 3px;
 }
-.proyect-line-two .admin-pic{
-    margin-left: -4px;
-    max-width: 300px;
-    max-height: 300px;
-    margin-top: 3px;
-}
-.proyect-line-two .app{
+.proyect456 .app{
     display: flex;
     flex-direction: column;
     margin-left: 35px;
@@ -371,27 +303,27 @@ blockquote{
     max-height: 290px;
     margin-top: 20px;
 }
-.proyect-third-line{
+.proyect-third-row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
 }
-.proyect-line-three{
+.proyect7{
     width: 350px;
     height: 350px;
     border-radius: 5%;
-    margin-left: -770px;
+    margin-left: -841px;
     border-width: 1px;
     border-style: solid;
     border-color:  #d1d1e9;
 }
-.proyect-line-three:hover{
+.proyect7:hover{
     border-style: solid;
     border-width: 1px;
     border-color: #b172ff;
 }
-.proyect-line-three .movie-pic{
+.proyect7 .movie-pic{
     margin-left: -4px;
     max-width: 300px;
     max-height: 300px;
@@ -401,9 +333,8 @@ blockquote{
 /*CONTACT -INFO PART*/
 #contact-father{
     background-image: linear-gradient(to right top, #d1d1e9, #b5b2ed, #9a93ef, #8173ef, #6a50eb);
-    width:1263px;
+    width: 100%;
     margin-top: 500px;
-    margin-left: -100px;
     height: 820px;
     position: relative
 }
@@ -447,7 +378,7 @@ li{
     width: 5em;
     color: black;
 }
-.fa-instagram{
+.fa-instagram, .fa-linkedin, .fa-github, .fa-envelope{
     color: #6246ea;
     margin-right: 20px;
     margin-left: -50px;
@@ -461,41 +392,17 @@ li{
     color:white;
     background-image: linear-gradient(to right bottom, #265bff, #6559ff, #8a55fe, #a951fc, #c44df9, #e03ce0, #f32dc6, #ff26ad, #ff457c, #ff8547, #ffc500, #ffff01);
 }
-.fa-linkedin{
-    color: #6246ea;
-    margin-right: 20px;
-    margin-left: -50px;
-    font-size: 30px;
-    padding: 5px;
-    margin-top: 5px;
-}
 .fa-linkedin:hover{
     border-style: solid;
     border-radius: 50%;
     color: white;
     background-color:#216BFF;
 }
-.fa-github{
-    color: #6246ea;
-    margin-right: 20px;
-    margin-left: -50px;
-    font-size: 30px;
-    padding: 5px;
-    margin-top: 5px; 
-}
 .fa-github:hover{
     border-style: solid;
     border-radius: 50%;
     color: white;
     background-color:black;
-}
-.fa-envelope{
-    color: #6246ea;
-    margin-right: 20px;
-    margin-left: -50px;
-    font-size: 30px;
-    padding: 5px;
-    margin-top: 5px; 
 }
 .fa-envelope:hover{
     border-style: solid;
@@ -508,11 +415,10 @@ li{
 .formulary{
     width: 50%;
     margin-top:-640px;
-    margin-left: 530px;
+    margin-left: 500px;
     border-radius: 3%;
     text-align: left;
     height: 650px;
-    
 }
 form, .continent{
     font-size: 20px;
@@ -548,21 +454,18 @@ input{
     border-radius: 60px;
     border-width: 1px;
     border-style: solid;
-
 }
 input:focus{
     border-style: solid;
     border-color: #3c1270;
     box-shadow: 0px 0px 15px 1px #c99dffee;
     outline:none;
-
 }
 #continent-opptions:focus{
     border-style: solid;
     border-color: #3c1270;
     box-shadow: 0px 0px 15px 1px #c99dffee;
     outline:none;
-
 }
 textarea:focus{
     border-style: solid;
@@ -579,17 +482,15 @@ textarea{
 /*FOOTER*/
 footer{
     background-color: #b172ff;
-    width: 1263px;
+    width: 100%;
     height: 300px;
-    margin-left: -100px;
     position: relative;
-    margin-top: -16px;
 }
 .ending{
-    width:400px;
+    width: 500px;
     position: absolute;
     margin-top: 70px;
-    margin-left: 430px;
+    margin-left: 380px;
     display: flex;
     justify-content: center;
     font-size: 15px;
@@ -610,6 +511,61 @@ footer .foooter-text{
     position:absolute;
     margin-top: 250px;
     font-size: 15px;
-    margin-left: 500px;
+    margin-left: 480px;
     color: white;
+}
+
+
+@media(max-width:500px){
+    #container-presentation{
+        background-color: #0004fd;
+        width:100%;
+        flex-direction: column;
+    }
+    .presentation{
+        background-color: red;
+        width: 60%;
+        height: 50%;
+        margin-top: 25%;
+        align-items: center;
+        text-align: center;
+        margin-left: 13%;
+    }
+    .text-presentation{
+        background-color: pink;
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+    }
+    h1{
+        background-color: yellow;
+        width: 142.5%;
+        margin-left:-22%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        align-items: center;
+        align-content: center;
+        
+    }
+    .button-presentation{
+        margin-left:-10%;
+    }
+    aside{
+        display: none;
+    }
+    .phrase{
+        background-color: #0069ff;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        justify-content: center;
+    }
+    blockquote{
+        flex-direction: column;
+        background-color: red;
+        width: 70%;
+        margin-left: 13%;
+    }
+
 }
