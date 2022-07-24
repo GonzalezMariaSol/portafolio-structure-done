@@ -8,6 +8,7 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
 /*TOP SEARCH BAR*/
 header{
     display: flex;
@@ -61,11 +62,7 @@ nav a{
     background-color:#7157f3;
     border-style: none;
 }
-@media(max-width: 400px){
-    header, nav{
-        display: none;
-    }
-}
+
 /*INTRODUCTION*/
 #container-presentation{
     background-color: white;
@@ -112,7 +109,7 @@ img{
     background-color: rgb(245, 245, 245);
     padding:100px;
     height: 900px;
-    text-align: center;         /*why text align it does work in this situation?*/
+    text-align: center;
 }
 .knowledge-cards{
     height: 800px;
@@ -138,77 +135,45 @@ img{
     margin-left: 150px;
     margin-top: -1em;
 }
-.knowledge-cards, .knowledge-line-one .knowledge-line-two{
+.knowledge-cards, .knowledge123 .knowledge-456{
     font-size: 20px;
 }
-.knowledge-first-line{
+.knowledge-first-row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
 }
-.knowledge-line-one{
+.knowledge123{
     background-color:white;
     width: 242px;
     height: 242px;
     border-radius: 5%;
     color:black;
 }
-.second-knowledge-line{
+.knowledge-second-row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 25px;
 }
-.knowledge-line-two{
+.knowledge456{
     background-color: white;
     width: 242px;
     height: 242px;
     border-radius: 5%;
     color: black;
 }
-.knowledge-line-one:hover{
+.knowledge123:hover{
     border-style: solid;
     border-width: 1px;
     border-color: #b172ff;
 }
-.knowledge-line-two:hover{
+.knowledge456:hover{
     border-style: solid;
     border-width: 1px;
     border-color: #b172ff;
 }
-@media (max-width:400px){
-    #knowledge{
-        width:100%;
-        height: max-content;
-        flex-direction: column;
-    }
-    .knowledge-cards{
-        width: 60%;
-        height: fit-content;
-        margin-top: 25%;
-        align-items:center; 
-        margin-left:-14.5%;
-    }
-    #knowledge-text{
-        width: 100%;
-        margin-left:0%;
-    }
-    .knowledge-first-line{
-        flex-direction: column;
-    }
-    .knowledge-line-one{
-        margin-bottom: 5%;
-    }
-    .second-knowledge-line{
-        flex-direction: column;
-        margin-top: -5%;
-    }
-    .knowledge-line-two{
-        margin-top: 5%;
-    }
-}
-
 
 /*QUOTE SECCTION*/
 .fa-quote-right{
@@ -229,29 +194,29 @@ blockquote{
     color: black;
 }
 
-/*PROYECTS SECCTION*/
-#proyect{
+/*PROJECTS SECCTION*/
+#project{
     background-color:white;
     width: 100%;
     padding-top: 75px;
     height: 45em;
     text-align: center;
 }
-#proyect-text{
+#project-text{
     width: 500px;
     margin-left: 380px;
     margin-top:-20px; 
 }
-#proyect, .proyect-line-one .proyect-line-two .proyect-line-three{
+#project, .project-line-one .project-line-two .project-line-three{
     font-size: 20px;
 }
-.proyect-first-row{
-    display: flex;
+.project-first-row{
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
+    display: flex;
 }
-.proyect123{
+.project123{
     width: 350px;
     height: 350px;
     border-radius: 5%;
@@ -259,24 +224,24 @@ blockquote{
     border-width: 1px;
     border-color:#d1d1e9;
 }
-.proyect123:hover{
+.project123:hover{
     border-style: solid;
     border-width: 1px;
     border-color: #b172ff;
 }
-.proyect123 .portfolio-pic, .generator-pic, .match-pic{
+.project123 .portfolio-pic, .generator-pic, .match-pic{
     margin-left: -4px;
     max-width: 330px;
     max-height: 300px;
     margin-top: 3px;
 }
-.proyect-second-row{
+.project-second-row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
 }
-.proyect456{
+.project456{
     width: 350px;
     height: 350px;
     border-radius: 5%;
@@ -284,18 +249,18 @@ blockquote{
     border-style: solid;
     border-color:#d1d1e9;
 }
-.proyect456:hover{
+.project456:hover{
     border-style: solid;
     border-width: 1px;
     border-color: #b172ff;
 }
-.proyect456 .expenses-pic, .admin-pic{
+.project456 .expenses-pic, .admin-pic{
     margin-left: -4px;
     max-width: 300px;
     max-height: 300px;
     margin-top: 3px;
 }
-.proyect456 .app{
+.project456 .app{
     display: flex;
     flex-direction: column;
     margin-left: 35px;
@@ -303,13 +268,13 @@ blockquote{
     max-height: 290px;
     margin-top: 20px;
 }
-.proyect-third-row{
+.project-third-row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
 }
-.proyect7{
+.project7{
     width: 350px;
     height: 350px;
     border-radius: 5%;
@@ -318,12 +283,12 @@ blockquote{
     border-style: solid;
     border-color:  #d1d1e9;
 }
-.proyect7:hover{
+.project7:hover{
     border-style: solid;
     border-width: 1px;
     border-color: #b172ff;
 }
-.proyect7 .movie-pic{
+.project7 .movie-pic{
     margin-left: -4px;
     max-width: 300px;
     max-height: 300px;
@@ -507,7 +472,7 @@ footer{
     margin-left: 490px;
     gap: 100px;
 }
-footer .foooter-text{
+footer .footer-text{
     position:absolute;
     margin-top: 250px;
     font-size: 15px;
@@ -516,56 +481,230 @@ footer .foooter-text{
 }
 
 
-@media(max-width:500px){
+@media(max-width:400px){
+    header{
+        display: none;
+    }
+
+    /* PRESENTATION */
     #container-presentation{
-        background-color: #0004fd;
+        background-color: yellow;
         width:100%;
         flex-direction: column;
     }
     .presentation{
-        background-color: red;
-        width: 60%;
-        height: 50%;
-        margin-top: 25%;
-        align-items: center;
+        width: 85%;
+        margin-top: 10%;
         text-align: center;
-        margin-left: 13%;
     }
     .text-presentation{
-        background-color: pink;
-        width: 100%;
+        width: 90%;
         height: 50%;
         justify-content: center;
+        margin-left: -2%;
     }
     h1{
-        background-color: yellow;
-        width: 142.5%;
-        margin-left:-22%;
-        padding-top: 10%;
-        padding-bottom: 10%;
-        align-items: center;
-        align-content: center;
-        
+        width: 90%;
+        margin-left:-2%;
+        padding-top: 15%;
+        padding-bottom: 15%;
     }
     .button-presentation{
-        margin-left:-10%;
+        margin-left:-2%;
     }
-    aside{
-        display: none;
+    aside img{
+        width: 80%;
+        margin-left: 10%;
+        height: fit-content;
+        margin-top: 50%;
+    } 
+
+    /*KNOWLEDGE*/
+    #knowledge{
+        background-color: #0004fd;
+        width: 44.5%;
+        height: max-content;
+        flex-direction: column;
     }
+    .knowledge-cards{
+        width: 370px;
+        margin-top: -60px;
+        height: fit-content;
+        align-items:center;
+        margin-left: -60%; 
+    }
+    .knowledge-cards strong{
+        margin-left: -1%;
+    }
+    #knowledge-text{
+        width: 70%;
+        margin-left: -0.5%;
+    }
+    .knowledge-cards i{
+        font-size: 50px;
+        padding-top: 0;
+        line-height: 100px;
+    }
+    .knowledge-first-row{
+        flex-direction: column;
+        width: 35%;
+        height: 20%;
+        margin-bottom:10%;
+        margin-left: -45%;
+    }
+    .knowledge123{
+        margin-bottom: 5%;
+        width: 125px;
+        height:125px; 
+    }
+    .knowledge-second-row{
+        flex-direction: column;
+        width: 35%;
+        margin-top: -431px;
+        margin-left: -25%;
+    }
+    .knowledge456{
+        margin-left: 90%;
+        margin-bottom: 5%;
+        width: 125px;
+        height:125.5px; 
+    } 
+
+    /* PHRASE */
     .phrase{
-        background-color: #0069ff;
+        background-color: rgb(79, 235, 162);
         flex-direction: column;
         width: 100%;
-        height: fit-content;
-        text-align: center;
-        justify-content: center;
+        height: fit-content;  
+    }
+    .phrase i, .phrase p{
+        width: 50%;
+        margin-left: 25%;
     }
     blockquote{
         flex-direction: column;
-        background-color: red;
         width: 70%;
-        margin-left: 13%;
+        margin-left: 15%;
     }
 
+    /*PROJECT*/
+    #project{
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgb(255, 190, 190);
+    }
+    #project strong{
+    }
+    #project-text{
+        margin: 0;
+        width: 60%;
+        margin-left: 20%;
+    }
+    project-first-row{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .project123{
+        width: 290px;
+        height: 340px;
+        margin-top: 10%;
+        margin-left: 0.6%;
+        background-color: #0039ff;
+    }
+    .project123 .portfolio-pic, .generator-pic, .match-pic{
+        margin-left: 0;
+        max-width: 285px;
+        max-height: 285px;
+    }
+    .project-second-row{
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 0;
+    }
+    .project456{
+        width: 290px;
+        height: 340px;
+        margin-top: 10%;
+        margin-left: 9%;
+    }
+    .project456 .admin-pic{
+        margin-left: 0;
+        max-width: 285px;
+        max-height: 285px;
+    }
+    .expenses-pic{
+        margin-right: -0%;
+        width: 275px;
+    }
+    .project-third-row{
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 0;
+    }
+    .project7{
+        width: 290px;
+        height: 340px;
+        margin-top: 10%;
+        margin-left: 9%;
+    }
+    .project7 .movie-pic{
+        margin-left: 0;
+        max-width: 285px;
+        max-height: 285px;
+    }
+
+    /*CONTACT*/
+    #contact-father{
+        width: 100%;
+        margin-top: 2%;
+        height: 1650px;
+    }
+    .contact{
+        width: 90%;
+        margin-left:4%;
+        height: 1550px;
+        border-radius: 50px;
+    }
+    #contact-text{
+        width: 90%;
+    }
+    .info{
+        width: 80%;
+        margin-left: 3%;
+        border-radius: 10px;
+    }
+    .formulary{
+        width: 80%;
+        margin-top: -10%;
+        margin-left: 3%;
+        border-radius: 10px;
+        height: fit-content;
+    }
+    .last-name{
+        margin-left: 0;
+        margin-top: 10%;
+    }
+    .continent{
+        margin-left: 0;
+        margin-top: 10%;
+    }
+    textarea{
+        width: 100%;
+    }
+
+    /*FOOTER*/
+    .ending{
+        display: none;
+    }
+    .social-media{
+        margin-left: 21%;
+        gap: 50px;
+        margin-top: 20%;
+    }
+    footer .footer-text{
+        width: 100%;
+        margin-left: 10%;
+        margin-top: 50%;
+    }
 }
