@@ -1,4 +1,4 @@
-# portafolio-structure-done# Proyecto Portafolio    
+# Proyecto Portafolio    
 Proyecto pedido por *ADA ITW* luego de haber finalizado el primer modulo de estudio para Desarroyadoras Web Front-end que abarca los conocimientos en **HTML** y **CSS**    
 dentro de este proyecto se podra encontrar aplicado:    
 - HTML
