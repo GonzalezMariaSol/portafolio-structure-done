@@ -50,17 +50,18 @@ nav a{
 .browser:hover{
     border-style: solid;
     border-width: 0.01em;
-    border-color:#6246ea;
-    box-shadow: 0px 0px 15px 1px #4f36ca;
+    border-color:#a87bc7;
+    box-shadow: 0px 0px 15px 1px #a87bc7;
 }
 #browserViolet{
-    background-color:#6246ea;
+    background-color:#a87bc7;
     color: white;
     border-radius: 60px;
 }
 #browserViolet:hover{
-    background-color:#7157f3;
+    background-color:#c6f5a9;
     border-style: none;
+    color: #a87bc7;
 }
 
 /*INTRODUCTION*/
@@ -84,14 +85,14 @@ nav a{
     align-items: center;
 } 
 img{
-    margin-left: 710px;
+    margin-left: 680px;
     margin-top: -320px;
     font-size: 30px;
-    width: 500px;
-    height: 400px;
+    width: 550px;
+    height: 450px;
 }
 .button-presentation{
-    background-color: #6246ea;
+    background-color:#a87bc7;
     width: 265px;
     height: 50px;
     margin-top: -40px;
@@ -100,8 +101,9 @@ img{
     border-radius: 60px;
 }
 .button-presentation:hover{
-    background-color:#b172ff;
+    background-color:#c6f5a9;
     border-style: none;
+    color: #a87bc7;
 }
 
 /*KNOWLEDGE SECTION*/
@@ -166,13 +168,13 @@ img{
 }
 .knowledge123:hover{
     border-style: solid;
-    border-width: 1px;
-    border-color: #b172ff;
+    border-width: 2px;
+    border-color: #c6f5a9;
 }
 .knowledge456:hover{
     border-style: solid;
-    border-width: 1px;
-    border-color: #b172ff;
+    border-width: 2px;
+    border-color: #c6f5a9;
 }
 
 /*QUOTE SECCTION*/
@@ -180,14 +182,14 @@ img{
     font-size: 90px;
 }
 .phrase{
-    background-color:#b172ff;
+    background-color:#c6f5a9;
     width: 100%;
-    /* width:1263px; */
     text-align: center;
     height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;  
+    color:black;
 }
 blockquote{
     width: 1200px;
@@ -221,12 +223,12 @@ blockquote{
     border-radius: 5%;
     border-style: solid;
     border-width: 1px;
-    border-color:#d1d1e9;
+    border-color:#a87bc7;
 }
 .project123:hover{
     border-style: solid;
-    border-width: 1px;
-    border-color: #b172ff;
+    border-width: 1.5px;
+    border-color:#c6f5a9;
 }
 .project123 .portfolio-pic, .generator-pic, .match-pic{
     margin-left: -4px;
@@ -245,12 +247,12 @@ blockquote{
     border-radius: 5%;
     border-width: 1px;
     border-style: solid;
-    border-color:#d1d1e9;
+    border-color:#a87bc7;
 }
 .project456:hover{
     border-style: solid;
-    border-width: 1px;
-    border-color: #b172ff;
+    border-width: 1.5px;
+    border-color: #c6f5a9;
 }
 .project456 .expenses-pic, .admin-pic{
     margin-left: -4px;
@@ -278,12 +280,12 @@ blockquote{
     margin-left: -841px;
     border-width: 1px;
     border-style: solid;
-    border-color:  #d1d1e9;
+    border-color:#a87bc7;
 }
 .project7:hover{
     border-style: solid;
-    border-width: 1px;
-    border-color: #b172ff;
+    border-width: 1.5px;
+    border-color:#c6f5a9;
 }
 .project7 .movie-pic{
     margin-left: -4px;
@@ -294,9 +296,7 @@ blockquote{
 
 /*CONTACT -INFO PART*/
 #contact-father{
-    background-image: linear-gradient(to right top, #d1d1e9, #b5b2ed, #9a93ef, #8173ef, #6a50eb);
-    width: 100%;
-    margin-top: 500px;
+    background-image: linear-gradient(to top, #ab85c4, #b89cd1, #c6b3dd, #d5cae9, #e6e1f3, #e2ebfc, #e1f5ff, #e6fdff, #c8fff9, #b4ffe6, #b1ffc6, #c1fb9e);    margin-top: 500px;
     height: 820px;
     position: relative
 }
@@ -341,7 +341,7 @@ li{
     color: black;
 }
 .fa-instagram, .fa-linkedin, .fa-github, .fa-envelope{
-    color: #6246ea;
+    color: #490079;
     margin-right: 20px;
     margin-left: -50px;
     font-size: 30px;
@@ -397,7 +397,7 @@ form, .continent{
     margin-top: -100px;
 }
 #send{
-    background-color: #6246ea;   
+    background-color: #a87bc7;   
     margin-top: 25px;
     width: 100px;
     height: 40px;
@@ -420,19 +420,19 @@ input{
 input:focus{
     border-style: solid;
     border-color: #3c1270;
-    box-shadow: 0px 0px 15px 1px #c99dffee;
+    box-shadow: 0px 0px 15px 1px #a87bc7;
     outline:none;
 }
 #continent-opptions:focus{
     border-style: solid;
     border-color: #3c1270;
-    box-shadow: 0px 0px 15px 1px #c99dffee;
+    box-shadow: 0px 0px 15px 1px #a87bc7;
     outline:none;
 }
 textarea:focus{
     border-style: solid;
     border-color: #3c1270;
-    box-shadow: 0px 0px 15px 1px #c99dffee;
+    box-shadow: 0px 0px 15px 1px #a87bc7;
     outline:none;
 }
 textarea{
@@ -443,7 +443,7 @@ textarea{
 
 /*FOOTER*/
 footer{
-    background-color: #b172ff;
+    background-color:#a87bc7;
     width: 100%;
     height: 300px;
     position: relative;
